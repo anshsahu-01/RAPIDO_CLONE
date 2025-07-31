@@ -1,0 +1,657 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+}
+
+.logo {
+  background-color: #ffcd1c;
+  color: black;
+  font-weight: bold;
+  font-size: 28px;
+  padding: 10px 25px;
+  border-radius: 40px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.0rem;
+  font-weight: 500;
+  padding :10px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+.nav-links a:hover{
+  color: #fffdfd;
+  background-color: #000000;
+  border-radius: 20px;
+}
+
+.hero {
+  background: url("https://maps.googleapis.com/maps/api/staticmap?center=India&zoom=12&size=800x600&maptype=roadmap&key=YOUR_API_KEY") no-repeat center center/cover;
+  padding: 100px 20px;
+  text-align: center;
+}
+.bg-image{
+  background: linear-gradient(rgba(255, 255, 255, 0.815),rgba(255, 254, 254, 0.815)), url("background1.webp");
+}
+
+.hero-content h1 {
+  font-size: 3.1rem;
+  font-weight: 700;
+  color: #373535;
+  margin-bottom: 30px;
+}
+
+.ride-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 25px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  border: 1px solid #2f2f2f;
+  background-color: white;
+  border-radius: 10px;
+  padding: 22px 35px;
+}
+
+.input-group .icon {
+  margin-right: 10px;
+  font-size: 18px;
+  color: #000000;
+}
+
+.input-group input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  width: 100%;
+}
+
+.ride-form button {
+  padding: 25px;
+  font-size: 28px;
+  font-weight: bold;
+  background-color: #ffcd1c;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.ride-form button:hover {
+  background-color: #f4bc00;
+}
+.services {
+  padding: 80px 50px;
+  background-color: #fff;
+  text-align: left;
+}
+
+.services h2 {
+  font-size: 3.1rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.underline {
+  display: inline-block;
+  width: 50px;
+  height: 4px;
+  background-color: #ffcd1c;
+  border-radius: 2px;
+  margin-bottom: 40px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 5fr));
+  gap: 50px 70px;
+  max-width: 1000px;
+  margin-top: 20px;
+  align-items:center ;
+  margin: auto;
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  gap: 15px;
+}
+
+.icon-box {
+  background-color: #f5f7fa;
+  padding: 15px;
+  border-radius: 20px;
+  width: 162px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  row-gap: 90px;
+}
+
+.icon-box img {
+  max-width: 120%;
+  height: auto;
+}
+
+.service-item p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #222;
+}
+.quick-rides {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f7fa;
+  padding: 80px 50px;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.text-content {
+  max-width: 500px;
+}
+
+.quick-rides h2 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.quick-rides h2 span {
+  position: relative;
+}
+
+.quick-rides h2 span::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background-color: #ffcd1c;
+  border-radius: 2px;
+}
+
+.quick-rides p {
+  font-size: 2.1rem;
+  margin: 30px 0;
+  color: #222;
+}
+
+.ride-btn {
+  display: inline-block;
+  background-color: #0f172a;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 9999px;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.ride-btn:hover {
+  background-color: #1e293b;
+}
+
+.image-content img {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 20px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9fafb;
+}
+
+.driver-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 20px;
+  background-color: #f5f7fa;
+}
+
+.driver-images img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+}
+
+.driver-content {
+  max-width: 500px;
+}
+
+.driver-content h2 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #1f2937;
+  line-height: 1.5;
+}
+
+.underline {
+  width: 40px;
+  height: 1px;
+  background-color: #facc15;
+  margin: 15px 0;
+  border-radius: 2px;
+}
+
+.driver-content p {
+  font-size: 2.1rem;
+  line-height: 1.2;
+  color: #202937;
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 19px 28px;
+  padding-bottom: 14px;
+  padding-top: 12px;
+  background-color: #111827;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 500;
+  border-radius: 999px;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background-color: #000;
+}
+.safety-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  gap: 60px;
+  background-color: #ffffff;
+}
+
+.safety-content {
+  max-width: 500px;
+}
+
+.safety-content h2 {
+  font-size: 3.1rem;
+  font-weight: 700;
+  color: #1e2125;
+}
+
+.underline {
+  width: 40px;
+  height: 3px;
+  background-color: #facc15;
+  margin: 15px 0 25px;
+  border-radius: 2px;
+}
+
+.safety-content p {
+  font-size: 2.0rem;
+  line-height: 1.5;
+  color: #313439;
+  margin-bottom: 25px;
+}
+
+.safety-link {
+  color: #172e6d;
+  font-size: 2.0rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.safety-link:hover {
+  text-decoration: underline;
+}
+
+.safety-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 25px;
+}
+
+.download-section {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.download-section h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.download-section .underline {
+  width: 60px;
+  height: 3px;
+  background-color: #facc15;
+  margin: 0 auto 40px;
+  border-radius: 2px;
+}
+
+.download-cards {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.app-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 180px;
+}
+
+.app-card img {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+.app-card p {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+.social-section {
+  background-color: #ffffff;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+.social-section hr {
+  border: none;
+  border-top: 1px solid #d1d5db; /* light gray */
+  margin: 0;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  padding: 25px 0;
+}
+
+.social-icons img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+.footer {
+  background-color: #fafafa;
+  padding: 40px 50px 20px;
+  font-family: sans-serif;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: flex-start;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  background-color: #ffcd1c;
+  color: black;
+  font-weight: bold;
+  font-size: 26px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 12px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 19px;
+}
+
+.footer hr {
+  border: none;
+  border-top: 1px solid #cbd5e1;
+  margin: 30px 0 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 15px;
+  color: #666;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .navbar {
+    padding: 15px 30px;
+  }
+  
+  .service-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .quick-rides,
+  .driver-section,
+  .safety-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .quick-rides h2 span::after,
+  .driver-content .underline,
+  .safety-content .underline {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .text-content,
+  .driver-content,
+  .safety-content {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .image-content img,
+  .driver-images img,
+  .safety-image img {
+    max-width: 100%;
+  }
+  
+  .footer-top {
+    gap: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px 20px;
+  }
+  
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .hero-content h1 {
+    font-size: 32px;
+  }
+  
+  /* Updated service grid for mobile - 3 cards in a row */
+  .service-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+  
+  .service-item {
+    gap: 10px;
+  }
+  
+  .icon-box {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    border-radius: 15px;
+  }
+  
+  .service-item p {
+    font-size: 14px;
+  }
+  
+  .download-cards {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+  
+  .footer-top {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .footer-column {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    padding: 60px 15px;
+  }
+  
+  .hero-content h1 {
+    font-size: 28px;
+  }
+  
+  .ride-form {
+    width: 100%;
+  }
+  
+  .services,
+  .quick-rides,
+  .driver-section,
+  .safety-section,
+  .download-section {
+    padding: 50px 20px;
+  }
+  
+  .services h2,
+  .quick-rides h2,
+  .driver-content h2,
+  .safety-content h2,
+  .download-section h2 {
+    font-size: 28px;
+  }
+  
+  /* Adjust service grid for very small screens */
+  @media (max-width: 480px) {
+    .service-grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+    
+    .icon-box {
+      width: 70px;
+      height: 70px;
+    }
+    
+    .service-item p {
+      font-size: 12px;
+    }
+  }
+  
+  .social-icons {
+    gap: 30px;
+  }
+  
+  .social-icons img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .logo {
+    font-size: 24px;
+    padding: 8px 20px;
+  }
+  
+  .nav-links {
+    gap: 15px;
+  }
+  
+  .nav-links a {
+    font-size: 15px;
+  }
+  
+  .input-group {
+    padding: 10px;
+  }
+  
+  .ride-form button {
+    padding: 12px;
+    font-size: 16px;
+  }
+}

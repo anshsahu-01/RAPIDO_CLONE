@@ -50,7 +50,7 @@ body {
   text-align: center;
 }
 .bg-image{
-  background: linear-gradient(rgba(255, 255, 255, 0.815),rgba(255, 254, 254, 0.815)), url("background1.webp");
+  background: linear-gradient(rgba(255, 255, 255, 0.815),rgba(255, 254, 254, 0.815)), url("./images/background1.webp");
 }
 
 .hero-content h1 {

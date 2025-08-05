@@ -1,0 +1,550 @@
+/* Reset and Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 50px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.logo img {
+  height: 51px;
+  margin-left: 127px;
+  margin-top: 2px;
+  width: 170px;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 5px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #222;
+}
+
+.nav-links a.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: black;
+  border-radius: 4px;
+}
+/* Download App Button */
+.download-btn a {
+  background-color: black;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.download-btn a:hover {
+  background-color: #333;
+}
+
+/* Beloved Section */
+.beloved-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 50px;
+  background: url("./images/backgroundaboutus.avif");
+  background-repeat:no-repeat ;;
+  flex-wrap: wrap;
+  background-size: cover;
+}
+
+.beloved-content {
+  max-width: 50%;
+}
+
+.beloved-title {
+  font-size: 55px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  font-weight: 300;
+  color: black;
+  margin-left: 140px;
+  margin-top: 40px;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.beloved-title strong {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.beloved-content p {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  color: #3a3a3af2;
+  margin-left: 140px;
+  margin-top: 10px;
+}
+
+.beloved-images {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.beloved-images1 img {
+  width: 200px;
+  border-radius: 250px;
+  margin-top: -250px;
+  margin-left: 90px;
+}
+.beloved-images2 img {
+  width: 300px;
+  height: 450px;
+  border-radius: 80px;
+  margin-top: 30px;
+  margin-right: 110px;
+  margin-left: 10px;
+}
+
+/* Founders Section */
+.founders-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 80px 50px;
+  background-color: #ffffff;
+  flex-wrap: wrap;
+}
+
+.founders-left {
+  max-width: 50%;
+  position: relative;
+}
+
+.founders-left h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-left: 140px;
+}
+
+.yellow-line {
+  width: 50px;
+  height: 3px;
+  background-color: #f7c600;
+  margin: 15px 0;
+  margin-left: 140px;
+}
+
+.founders-left p {
+  font-size:  1.4rem;;
+  color: #484747d7;
+  line-height: 1.6;
+  margin-left: 140px;
+}
+
+.founders-right {
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.founder-card {
+  text-align: center;
+}
+
+.img-wrap {
+  background-color: #f7c600;
+  padding-bottom: -5px;
+  padding-left: 5px;
+  border-radius: 18px;
+  display: inline-block;
+  margin-right: 110px;
+}
+
+.img-wrap img {
+  width: 80px;
+  height: 80px;
+  border-radius: 15px;
+  object-fit: cover;
+  border: 3px solid white;
+}
+
+.founder-card h4 {
+  margin-top: 10px;
+  font-weight: 600;
+  margin-right: 110px;
+}
+
+.founder-card p {
+  color: #555;
+  margin-right: 110px;
+}
+
+.careers-section {
+  background: url('./images/rapidoworkers.jpg') top center / cover no-repeat;
+  height: 65vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* dark overlay for text visibility */
+}
+
+.careers-content {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+  padding: 20px;
+}
+
+.careers-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.careers-content p {
+  font-size: 1.3rem;
+  margin-bottom: 25px;
+}
+
+.careers-content button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  font-size: 1.5rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.careers-content button:hover {
+  background-color: #222;
+}
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 20px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-column {
+  flex: 1 1 150px;
+  margin: 15px;
+}
+
+.footer-column h4 {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #ccc;
+}
+
+.store-badge {
+  width: 140px;
+  margin-bottom: 30px;
+  display: block;
+  cursor: pointer;
+}
+
+.social-icons i {
+  font-size: 20px;
+  margin-right: 15px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  color: white;
+}
+
+.social-icons i:hover {
+  color: #ccc;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  border-top: 1px solid #222;
+  padding-top: 15px;
+}
+
+/* Your existing CSS code remains exactly the same until this point */
+
+/* Your existing CSS remains exactly the same until this point */
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .logo img {
+    margin-left: 50px;
+  }
+  
+  .beloved-title,
+  .beloved-content p,
+  .founders-left h2,
+  .yellow-line,
+  .founders-left p {
+    margin-left: 50px;
+  }
+  
+  .beloved-images1 img {
+    margin-left: 40px;
+  }
+  
+  .beloved-images2 img {
+    margin-right: 50px;
+  }
+  
+  .img-wrap {
+    margin-right: 50px;
+  }
+  
+  .founder-card h4,
+  .founder-card p {
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    padding: 15px 20px;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .logo img {
+    margin-left: 0;
+  }
+  
+  .nav-links {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+  .download-btn {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .beloved-section {
+    flex-direction: column;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .beloved-content {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .beloved-title,
+  .beloved-content p {
+    margin-left: 0;
+    text-align: center;
+  }
+  
+  .beloved-images {
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .beloved-images1 img {
+    margin-top: 0;
+    margin-left: 0;
+  }
+  
+  .beloved-images2 img {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  
+  .founders-section {
+    flex-direction: column;
+    padding: 50px 20px;
+  }
+  
+  .founders-left {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .founders-left h2,
+  .yellow-line,
+  .founders-left p {
+    margin-left: 0;
+    text-align: center;
+  }
+  
+  .founders-right {
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .img-wrap,
+  .founder-card h4,
+  .founder-card p {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .beloved-title {
+    font-size: 40px;
+  }
+  
+  .beloved-content p {
+    font-size: 1.2rem;
+  }
+  
+  .beloved-images {
+    flex-direction: column;
+  }
+  
+  .beloved-images1 img {
+    width: 150px;
+  }
+  
+  .beloved-images2 img {
+    width: 250px;
+    height: auto;
+  }
+  
+  .careers-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .careers-content p {
+    font-size: 1.1rem;
+  }
+  
+  .footer-column {
+    flex: 1 1 100%;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    padding: 15px 10px;
+  }
+  
+  .nav-links {
+    gap: 10px;
+  }
+  
+  .nav-links a {
+    font-size: 14px;
+  }
+  
+  .download-btn a {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+  
+  .beloved-title {
+    font-size: 32px;
+  }
+  
+  .beloved-content p {
+    font-size: 1rem;
+  }
+  
+  .founders-left h2 {
+    font-size: 28px;
+  }
+  
+  .founders-left p {
+    font-size: 1rem;
+  }
+  
+  .careers-content h1 {
+    font-size: 2rem;
+  }
+  
+  .careers-content button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+  }
+  
+  .founder-card {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+}

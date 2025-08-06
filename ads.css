@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 50px;
+  background-color: #ffffff;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+  margin-left: 90px;
+  margin-top: 5px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 45px;
+  margin-right: 90px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+  font-size: 21px;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #ffcc1d;
+}
+
+.ads-section {
+  background: #fff9ec; /* skin/peach tone */
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.ads-box {
+  background: #ffffff3d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 80px;
+  border-radius: 5px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  max-width: 1300px;
+  width: 100%;
+}
+
+.ads-content {
+  flex: 1;
+}
+
+.ads-content h1 {
+  font-size: 48px;
+  color: #1e1e1e;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.ads-content p {
+  font-size: 24px;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+.ads-content button {
+  background-color: #ffcc1d;
+  color: #000;
+  border: none;
+  padding: 14px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.ads-content button:hover {
+  background-color: #e5b600;
+}
+
+.ads-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.ads-image img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}

@@ -104,3 +104,71 @@ body {
   max-width: 600px;
   height: auto;
 }
+
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.rapido-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.rapido-title {
+    font-size: 2.5rem;
+    color: #333333;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.rapido-description {
+    font-size: 1.2rem;
+    color: #555555;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.divider {
+    height: 2px;
+    background-color: #c80000;
+    width: 100px;
+    margin: 40px auto;
+}
+
+.stats-container {
+  display: flex;
+  flex-flow: wrap;
+  gap: 52px;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  max-width: 1400px;
+}
+
+.stat-item {
+    padding: 40px;
+    min-width: 200px;
+    border: 2px solid rgb(198, 246, 255);
+    background-color: rgba(171, 203, 255, 0.132);
+    padding-right: 280px;
+    border-radius: 5px;
+}
+
+.stat-number {
+    font-size: 2.8rem;
+    color: #000000;
+    margin-bottom: 10px;
+    font-weight: 700;
+    flex-wrap: wrap;
+}
+
+.stat-label {
+    font-size: 1.1rem;
+    color: #666666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+

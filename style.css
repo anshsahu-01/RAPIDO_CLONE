@@ -47,11 +47,11 @@ body {
 
 .hero {
   background: url("https://maps.googleapis.com/maps/api/staticmap?center=India&zoom=12&size=800x600&maptype=roadmap&key=YOUR_API_KEY") no-repeat center center/cover;
-  padding: 100px 20px;
+  padding: 80px 20px;
   text-align: center;
 }
 .bg-image{
-  background: linear-gradient(rgba(255, 255, 255, 0.815),rgba(255, 254, 254, 0.815)), url("./images/background1.webp");
+  background: url("./images/homepagebackground.jpg")
 }
 
 .hero-content h1 {

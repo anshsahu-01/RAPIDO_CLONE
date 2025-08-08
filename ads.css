@@ -433,3 +433,629 @@ hr {
   border-radius: 12px;
 }
 
+.campaigns-section {
+  background-color: #e4f1fe; /* halka light blue background */
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.campaigns-section h2 {
+  font-size: 55px;
+  font-weight: 650;
+  color: #292929;
+  margin-bottom: 40px;
+}
+
+.campaigns-section p {
+  font-size: 28px;
+  font-weight: 400;
+  color: #2e2e2e;
+  margin-bottom: -60px;
+}
+
+.section-sprite {
+  background-color: #e4f1fe;
+  padding: 50px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.container-sprite {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.image-box-sprite img {
+  width: 100%;
+  max-height: 300px;
+  max-width: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+
+}
+
+.text-box-sprite h2 {
+  font-size: 2rem;
+  margin-top: 20px;
+  color: #222;
+}
+
+.text-box-sprite p {
+  font-size: 1rem;
+  color: #444;
+  margin: 15px 0;
+}
+
+.tags-sprite {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.tags-sprite span {
+  background-color: #ffffff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+
+.section-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 50px 20px;
+  background-color: #e4f1fe;
+}
+
+.section-sprite,
+.section-suzuki {
+  background-color: #e4f1fe;
+  border-radius: 10px;
+  padding: 20px;
+  width: 350px;
+  text-align: center;
+  /* box-shadow: 0 4px 8px rgba(0,0,0,0.08);*/
+} 
+
+.image-box-sprite img,
+.image-box-suzuki img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  filter: brightness(0.8);
+}
+
+/* Sprite Text */
+.text-box-sprite h2,
+.text-box-suzuki h2 {
+  font-size: 1.8rem;
+  margin: 15px 0 10px;
+  color: #222;
+}
+
+.text-box-sprite p,
+.text-box-suzuki p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+/* Tags */
+.tags-sprite,
+.tags-suzuki {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.tags-sprite span,
+.tags-suzuki span {
+  background-color: #ffffff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.sectioncontactbtn{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding-bottom:  20px;
+  background-color: #e4f1fe;
+}
+
+.campaign-btn {
+  margin-top: 40px;
+  display: grid;
+}
+
+.campaign-btn a {
+  text-decoration: none;
+  color: black;
+  border: 3px solid black;
+  padding: 14px 28px;
+  font-size: 22px;
+  font-weight: 630;
+  border-radius: 40px;
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+.campaign-btn a:hover {
+  background-color: rgb(219, 219, 219);
+  color: rgb(0, 0, 0);
+}
+
+.rapido-form-container {
+  background-color: #0d2550;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.rapido-form-heading {
+  font-size: 3.15rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.rapido-form-subtext {
+  font-size: 1.6rem;
+  margin-bottom: 40px;
+}
+
+.rapido-form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.rapido-form-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.rapido-input {
+  flex: 1;
+  padding: 16px 20px;
+  border-radius: 40px;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+/* Hover ya Focus par border yellow ho jaye */
+
+.rapido-input:focus {
+  border-color: #ffc107;
+}
+
+
+.rapido-submit-btn {
+  margin-top: 10px;
+  padding: 16px;
+  border-radius: 40px;
+  background-color: #ffc107;
+  color: #0d2550;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.rapido-submit-btn:hover {
+  background-color: #e0ac00;
+}
+
+.rapido-disclaimer {
+  font-size: 0.6rem;
+  margin-top: 15px;
+  color: #cfd9f5;
+}
+
+.social-section {
+  background-color: #ffffff;
+  padding: 10px 0;
+}
+
+.social-section hr {
+  border: none;
+  border-top: 1px solid #d1d5db; /* light gray */
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.social-icons img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+.footer {
+  background-color: #ffffff;
+  padding: 40px 50px 20px;
+  font-family: sans-serif;
+  margin-left: 120px;
+}
+
+.footer hr{
+  width: 93%;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: flex-start;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  height: 50px;
+  width: auto;
+  margin-bottom: 20px;
+  margin-left: -15px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 12px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 19px;
+}
+
+.footer hr {
+  border: none;
+  border-top: 1px solid #cbd5e1;
+  margin: 30px 0 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 15px;
+  color: #666;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+  
+  .logo img {
+    margin-left: 30px;
+  }
+  
+  .nav-links {
+    margin-right: 30px;
+    gap: 30px;
+  }
+  
+  .ads-box {
+    padding: 40px;
+  }
+  
+  .ads-content h1 {
+    font-size: 40px;
+  }
+  
+  .ads-content p {
+    font-size: 20px;
+  }
+  
+  .stat-item {
+    padding-right: 200px;
+  }
+  
+  .footer {
+    margin-left: 60px;
+  }
+}
+
+@media (max-width: 992px) {
+  .ads-box {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .ads-content {
+    margin-bottom: 40px;
+  }
+  
+  .ads-image img {
+    max-width: 500px;
+  }
+  
+  .stat-item {
+    padding: 30px;
+    padding-right: 150px;
+  }
+  
+  .sprite-ads-right h2,
+  .sprite-ads-right p {
+    margin-left: 0;
+    text-align: center;
+  }
+  
+  .sprite-advision-left h2,
+  .sprite-advision-left p {
+    margin-right: 0;
+    text-align: center;
+  }
+  
+  .footer-top {
+    gap: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 15px;
+  }
+  
+  .logo img {
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+  
+  .nav-links {
+    margin-right: 0;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .nav-links li a {
+    font-size: 18px;
+  }
+  
+  .ads-content h1 {
+    font-size: 32px;
+  }
+  
+  .ads-content p {
+    font-size: 18px;
+  }
+  
+  .rapido-title {
+    font-size: 2rem;
+  }
+  
+  .rapido-description {
+    font-size: 1rem;
+  }
+  
+  .stat-item {
+    padding: 20px;
+    padding-right: 100px;
+  }
+  
+  .targeting-section .heading {
+    font-size: 2rem;
+  }
+  
+  .targeting-section .subtext {
+    font-size: 1.1rem;
+  }
+  
+  .section-title {
+    font-size: 28px;
+  }
+  
+  .section-subtitle {
+    font-size: 16px;
+  }
+  
+  .sprite-ads-heading h1 {
+    font-size: 32px;
+    margin-top: 60px;
+  }
+  
+  .sprite-ads-heading p {
+    font-size: 18px;
+  }
+  
+  .sprite-ads-left img {
+    width: 100%;
+    margin-top: 40px;
+  }
+  
+  .campaigns-section h2 {
+    font-size: 40px;
+  }
+  
+  .campaigns-section p {
+    font-size: 20px;
+  }
+  
+  .section-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .section-sprite,
+  .section-suzuki {
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .rapido-form-heading {
+    font-size: 2.5rem;
+  }
+  
+  .rapido-form-subtext {
+    font-size: 1.2rem;
+  }
+  
+  .footer {
+    margin-left: 20px;
+    padding: 30px;
+  }
+  
+  .footer-top {
+    gap: 40px;
+  }
+  
+  .footer-column ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-links {
+    gap: 15px;
+  }
+  
+  .ads-section {
+    padding: 40px 0;
+  }
+  
+  .ads-content h1 {
+    font-size: 28px;
+  }
+  
+  .ads-content button {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+  
+  .stat-item {
+    padding: 15px;
+    padding-right: 80px;
+    min-width: 150px;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+  }
+  
+  .stat-label {
+    font-size: 0.9rem;
+  }
+  
+  .targeting-section .heading {
+    font-size: 1.8rem;
+  }
+  
+  .targeting-cards-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card {
+    max-width: 100%;
+  }
+  
+  .industries-section {
+    padding: 40px 15px;
+  }
+  
+  .cards-wrapper {
+    grid-template-columns: 1fr;
+  }
+  
+  .sprite-ads-container,
+  .sprite-advision-container {
+    flex-direction: column;
+  }
+  
+  .rapido-form-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .rapido-input {
+    width: 100%;
+  }
+  
+  .social-icons img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .footer {
+    margin-left: 10px;
+    padding: 20px 15px;
+  }
+  
+  .footer-top {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .footer-column {
+    width: 100%;
+  }
+  
+  .footer hr {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .nav-links li a {
+    font-size: 16px;
+  }
+  
+  .ads-content h1 {
+    font-size: 24px;
+  }
+  
+  .ads-content p {
+    font-size: 16px;
+  }
+  
+  .stat-item {
+    padding-right: 60px;
+  }
+  
+  .campaign-btn a {
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+  
+  .rapido-form-heading {
+    font-size: 2rem;
+  }
+  
+  .rapido-form-subtext {
+    font-size: 1rem;
+  }
+}

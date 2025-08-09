@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 50px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  width: 100%;
+}
+
+.logo img {
+  height: 51px;
+  margin-left: 127px;
+  margin-top: 2px;
+  width: 170px;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 5px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #525252;
+}
+
+.nav-links a.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  border-radius: 4px;
+}
+/* Download App Button */
+.download-btn a {
+  background-color: black;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  margin-right: 130px;
+}
+
+.download-btn a:hover {
+  background-color: #333;
+}
+
+.rapido-subnav {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  background-color: #fafafa;
+  padding: 15px 0;
+  position: fixed;
+  top: 83px; /* navbar ke niche */
+  left: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.rapido-subnav-link {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: #333;
+  position: relative;
+  transition: color 0.3s ease;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.rapido-subnav-link:hover {
+  color: #000;
+}
+
+.rapido-safety-section1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    background-color: #fff; /* background color */
+}
+.rapido-safety-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    background-color: #fff; /* background color */
+}
+
+
+.rapido-safety-section1 img {
+    width: 65%;
+    height: auto;
+    display: block;
+    margin-top: 90px;
+}
+    
+.rapido-safety-section1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.rapido-safety-section51 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    background-color: #fff;
+    cursor: pointer;
+    display: none; /* hidden by default */
+}
+
+.rapido-safety-section img {
+    width: 65%;
+    height: auto;
+    display: block;
+}
+.rapido-safety-section51 img {
+    width: 65%;
+    height: auto;
+    display: block;
+    margin-top: -80px;
+}
+
+.covers-everyone{
+  width: 1005px;
+  height: auto;
+  margin-left: 265px;
+  margin-top: -60px;
+}
+
+
+.rapido-dual-image-section {
+    width: 65%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0px; /* space between images */
+    padding: 50px 0;
+    margin-top: -40px;
+}
+
+.rapido-dual-image-section img {
+    width: 50%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 20px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-column {
+  flex: 1 1 150px;
+  margin: 15px;
+}
+
+.footer-column h4 {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #ccc;
+}
+
+.store-badge {
+  width: 140px;
+  margin-bottom: 30px;
+  display: block;
+  cursor: pointer;
+}
+
+.social-icons i {
+  font-size: 20px;
+  margin-right: 15px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  color: white;
+}
+
+.social-icons i:hover {
+  color: #ccc;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  border-top: 1px solid #222;
+  padding-top: 15px;
+}

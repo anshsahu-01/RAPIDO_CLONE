@@ -14,6 +14,8 @@ body {
   justify-content: space-between;
   padding: 15px 50px;
   background-color: #ffffff;
+  position: fixed;
+  width: 100%;
 }
 
 .logo img {
@@ -35,13 +37,13 @@ body {
   color: black;
   font-size: 21px;
   transition: color 0.3s ease;
+  padding: 5px;
 }
 
 
 
-.nav-links a:hover{
-  color: #fffdfd;
-  background-color: #000000;
+.nav-links a:hover {
+  color: #6a6a6a;
   border-radius: 20px;
 }
 
@@ -50,7 +52,8 @@ body {
   padding: 80px 20px;
   text-align: center;
 }
-.bg-image{
+
+.bg-image {
   background: url("./images/homepagebackground.jpg")
 }
 
@@ -106,6 +109,7 @@ body {
 .ride-form button:hover {
   background-color: #f4bc00;
 }
+
 .services {
   padding: 80px 50px;
   background-color: #fff;
@@ -133,14 +137,14 @@ body {
   gap: 50px 70px;
   max-width: 1000px;
   margin-top: 20px;
-  align-items:center ;
+  align-items: center;
   margin: auto;
 }
 
 .service-item {
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
   gap: 15px;
 }
 
@@ -166,6 +170,7 @@ body {
   font-weight: 500;
   color: #222;
 }
+
 .quick-rides {
   display: flex;
   justify-content: space-between;
@@ -229,6 +234,7 @@ body {
   width: 100%;
   border-radius: 20px;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -300,6 +306,7 @@ body {
 .btn:hover {
   background-color: #000;
 }
+
 .safety-section {
   display: flex;
   flex-wrap: wrap;
@@ -406,7 +413,8 @@ body {
 
 .social-section hr {
   border: none;
-  border-top: 1px solid #d1d5db; /* light gray */
+  border-top: 1px solid #d1d5db;
+  /* light gray */
 }
 
 .social-icons {
@@ -479,190 +487,223 @@ body {
   color: #666;
 }
 
-/* Responsive Styles */
+/* ==================== GENERAL RESPONSIVE RULES ==================== */
 @media (max-width: 1200px) {
   .navbar {
     padding: 15px 30px;
   }
   
-  .service-grid {
-    grid-template-columns: repeat(3, 1fr);
+  .logo img {
+    margin-left: 50px;
+  }
+  
+  .nav-links {
+    margin-right: 50px;
+    gap: 30px;
   }
 }
 
 @media (max-width: 992px) {
-  .quick-rides,
-  .driver-section,
-  .safety-section {
-    flex-direction: column;
-    text-align: center;
+  .hero-content h1,
+  .services h2,
+  .quick-rides h2,
+  .driver-content h2,
+  .safety-content h2 {
+    font-size: 2.5rem;
   }
   
-  .quick-rides h2 span::after,
-  .driver-content .underline,
-  .safety-content .underline {
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  .text-content,
-  .driver-content,
-  .safety-content {
-    max-width: 100%;
-    margin-bottom: 30px;
-  }
-  
-  .image-content img,
-  .driver-images img,
-  .safety-image img {
-    max-width: 100%;
-  }
-  
-  .footer-top {
-    gap: 50px;
+  .quick-rides p,
+  .driver-content p,
+  .safety-content p {
+    font-size: 1.6rem;
   }
 }
 
 @media (max-width: 768px) {
+  /* ==================== NAVBAR ==================== */
   .navbar {
-    flex-direction: column;
-    gap: 15px;
     padding: 15px 20px;
+    flex-wrap: wrap;
   }
   
-
-  .logo{
-    margin-left: -90px;
+  .logo img {
+    margin-left: 0;
+    height: 40px;
   }
+  
   .nav-links {
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: center;
-    margin-right:-35px ;
-  }
-
-  .nav-links li a{
-    font-size: 18px;
-    margin-left: -25px;
-  }
-
-  .hero-content h1 {
-    font-size: 32px;
-  }
-  
-  /* Updated service grid for mobile - 3 cards in a row */
-  .service-grid {
-    grid-template-columns: repeat(3, 1fr);
+    margin-right: 0;
     gap: 15px;
-  }
-  
-  .service-item {
-    gap: 10px;
-  }
-  
-  .icon-box {
-    width: 80px;
-    height: 80px;
-    padding: 10px;
-    border-radius: 15px;
-  }
-  
-  .service-item p {
-    font-size: 14px;
-  }
-  
-  .download-cards {
-    flex-direction: column;
-    gap: 40px;
-    align-items: center;
-  }
-  
-  .footer-top {
-    flex-direction: column;
-    gap: 30px;
-  }
-  
-  .footer-column {
+    margin-top: 15px;
     width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
   }
-}
+  
+  .nav-links li a {
+    font-size: 16px;
+    padding: 5px 8px;
+  }
 
-@media (max-width: 576px) {
+  /* ==================== HERO SECTION ==================== */
   .hero {
     padding: 60px 15px;
   }
   
   .hero-content h1 {
-    font-size: 28px;
+    font-size: 2rem;
   }
   
   .ride-form {
-    width: 100%;
-  }
-  
-  .services,
-  .quick-rides,
-  .driver-section,
-  .safety-section,
-  .download-section {
-    padding: 50px 20px;
-  }
-  
-  .services h2,
-  .quick-rides h2,
-  .driver-content h2,
-  .safety-content h2,
-  .download-section h2 {
-    font-size: 28px;
-  }
-  
-  /* Adjust service grid for very small screens */
-  @media (max-width: 480px) {
-    .service-grid {
-      grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
-    }
-    
-    .icon-box {
-      width: 70px;
-      height: 70px;
-    }
-    
-    .service-item p {
-      font-size: 12px;
-    }
-  }
-  
-  .social-icons {
-    gap: 30px;
-  }
-  
-  .social-icons img {
-    width: 40px;
-    height: 40px;
-  }
-}
-
-@media (max-width: 400px) {
-  .logo {
-    justify-content: center;
-  }
-  
-  .nav-links {
-    gap: 15px;
-  }
-  
-  .nav-links a {
-    font-size: 15px;
-    margin-left: 20px;
+    max-width: 100%;
   }
   
   .input-group {
-    padding: 10px;
+    padding: 15px 20px;
   }
   
   .ride-form button {
-    padding: 12px;
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  /* ==================== SERVICES SECTION ==================== */
+  .services {
+    padding: 60px 20px;
+  }
+  
+  .service-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+  }
+  
+  .icon-box {
+    width: 120px;
+    height: 100px;
+  }
+
+  /* ==================== QUICK RIDES SECTION ==================== */
+  .quick-rides {
+    padding: 60px 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .quick-rides h2 span::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .image-content img {
+    max-width: 100%;
+  }
+
+  /* ==================== DRIVER SECTION ==================== */
+  .driver-section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .driver-content {
+    order: -1;
+  }
+
+  /* ==================== SAFETY SECTION ==================== */
+  .safety-section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .safety-content {
+    order: -1;
+  }
+
+  /* ==================== DOWNLOAD SECTION ==================== */
+  .download-section {
+    padding: 40px 20px;
+  }
+  
+  .download-cards {
+    gap: 30px;
+  }
+
+  /* ==================== FOOTER ==================== */
+  .footer {
+    padding: 30px 20px;
+  }
+  
+  .footer-top {
+    gap: 40px;
+    justify-content: space-between;
+  }
+  
+  .footer-column {
+    flex: 1 1 150px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* ==================== NAVBAR ==================== */
+  .nav-links {
+    gap: 10px;
+  }
+  
+  .nav-links li a {
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  /* ==================== HERO SECTION ==================== */
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+  
+  .ride-form button {
+    padding: 15px;
+    font-size: 18px;
+  }
+
+  /* ==================== SERVICES SECTION ==================== */
+  .services h2 {
+    font-size: 2rem;
+  }
+  
+  .service-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+    gap: 15px; /* Smaller gap for mobile */
+  }
+  
+  .service-item p {
     font-size: 16px;
+    text-align: center;
+  }
+
+  /* ==================== TEXT SIZES ==================== */
+  .quick-rides h2,
+  .driver-content h2,
+  .safety-content h2 {
+    font-size: 2rem;
+  }
+  
+  .quick-rides p,
+  .driver-content p,
+  .safety-content p {
+    font-size: 1.4rem;
+  }
+  
+  .btn,
+  .ride-btn {
+    font-size: 1.4rem;
+    padding: 12px 24px;
+  }
+
+  /* ==================== SOCIAL SECTION ==================== */
+  .social-icons {
+    gap: 20px;
+  }
+  
+  .social-icons img {
+    width: 80px;
+    height: 80px;
   }
 }

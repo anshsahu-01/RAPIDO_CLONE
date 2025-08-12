@@ -22,6 +22,8 @@ hr {
   justify-content: space-between;
   padding: 15px 50px;
   background-color: #ffffff;
+  position: fixed;
+  width: 100%;
 }
 
 .logo img {

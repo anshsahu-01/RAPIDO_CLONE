@@ -83,6 +83,7 @@ body {
   background-repeat:no-repeat ;;
   flex-wrap: wrap;
   background-size: cover;
+  padding-top: 160px;
 }
 
 .beloved-content {

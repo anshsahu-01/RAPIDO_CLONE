@@ -1,0 +1,809 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff;
+  margin: 0;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 50px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 82px; /* Explicit height */
+}
+
+.logo img {
+  height: 51px;
+  margin-left: 127px;
+  margin-top: 2px;
+  width: 170px;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 5px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #222;
+}
+
+.nav-links a.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1.5px;
+  width: 100%;
+  background-color: black;
+  border-radius: 4px;
+}
+
+/* Download App Button */
+.download-btn a {
+  background-color: black;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  margin-right: 140px;
+}
+
+.download-btn a:hover {
+  background-color: #333;
+}
+
+/* Team Section */
+.team-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 10%;
+  background-color: #fff;
+  padding-top: 220px;
+}
+
+.team-text {
+  max-width: 50%;
+}
+
+.team-text h2 {
+  font-size: 3.1rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  margin-top: -100px;
+  line-height: 1.5;
+}
+
+.team-text p {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  color: #5d5d5d;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  font-weight: 330;
+}
+
+.view-jobs-btn {
+  display: inline-block;
+  background-color: #fccc3c;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  transition: background 0.2s;
+  margin-left: 30px;
+}
+
+.view-jobs-btn:hover {
+  background-color: #e5b800;
+}
+
+/* Team Images */
+.team-images {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #fff8d9;
+  padding: 40px;
+  border-top-left-radius: 150px;
+  border-bottom-right-radius: 150px;
+  border-bottom-left-radius: 150px;
+  margin-right: 20px;
+}
+
+.team-images .image-left img {
+  width: 180px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 90px 90px 5px 90px;
+  margin-bottom: 250px;
+}
+
+.team-images .image-right img {
+  width: 290px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px 90px 90px 90px;
+  margin-left: -9px;
+  margin-top: 60px;
+}
+
+/* Why Work With Us */
+.why-work-with-us {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.why-work-with-us h2 {
+  font-size: 2.1rem;
+  font-weight: bold;
+}
+
+.why-work-with-us .underline {
+  width: 50px;
+  height: 3px;
+  background-color: #ffcc00;
+  margin: 8px auto 30px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.feature-item {
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+}
+
+.feature-item img {
+  width: 95px;
+  height: auto;
+  margin-bottom: 25px;
+}
+
+.feature-item p {
+  font-size: 16px;
+  color: #424242;
+  line-height: 1.4;
+  margin-bottom: 50px;
+}
+
+/* Rapido Carousel */
+.rapido-carousel-section {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto 80px;
+  text-align: center;
+  scroll-margin-top: 70px;
+}
+
+.rapido-carousel-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.rapido-carousel-container {
+  overflow: hidden;
+  padding: 10px 60px;
+}
+
+.rapido-carousel-track {
+  display: flex;
+  transition: transform 0.45s ease;
+}
+
+.rapido-carousel-item {
+  flex: 0 0 calc(100% / 3);
+  padding: 0 18px;
+}
+
+.rapido-carousel-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.rapido-carousel-container {
+  position: relative; /* Added for button positioning */
+  overflow: hidden;
+  padding: 10px 60px;
+}
+
+/* Carousel Buttons */
+.rapido-carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background: #fff;
+  box-shadow: 0 8px 30px rgba(13, 21, 34, 0.08);
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #111;
+  z-index: 5;
+  margin-right: 50px;
+}
+.rapido-prev {
+  left: -60px; /* Image se bahar */
+}
+
+.rapido-next {
+  right: -70px; /* Image se bahar */
+}
+
+.rapido-carousel-btn:disabled {
+  opacity: 0.45;
+  box-shadow: none;
+}
+
+/* Carousel Dots */
+.rapido-carousel-dots {
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.rapido-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ccc;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.rapido-dot.active {
+  background: #FFC107;
+}
+
+/* Employee Review */
+.employee-review-section {
+  /* position: relative; */
+  padding: 60px 20px;
+  background: #ffffff;
+  overflow: hidden;
+  scroll-margin-top: 70px; 
+}
+
+.employee-review-title {
+  text-align: center;
+  font-size: 2.1rem;
+  margin-bottom: 16px;
+}
+
+.employee-review-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #FFC107;
+  margin: 8px auto 0;
+}
+
+.employee-review-carousel {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.employee-review-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.employee-review-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.emp-card {
+  flex: 0 0 calc(50% - 40px);
+  background: #ffffff38;
+  border-radius: 10px;
+  margin: 0 20px;
+  padding: 20px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.295);
+  position: relative;
+  height: 250px;
+  margin-top: 110px;
+}
+
+@media (max-width: 768px) {
+  .emp-card {
+    flex: 0 0 calc(100% - 40px);
+  }
+}
+
+.emp-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px 20px 0 20px;
+  border-right: 2px rgb(255, 206, 45);
+  border-bottom: 2px rgb(255, 206, 45);
+  position: absolute;
+  top: -30px;
+  left: 20px;
+  background: #fff;
+  margin-top: 50px;
+}
+
+.emp-text {
+  margin-top: 120px;
+  font-style: italic;
+  color: #555;
+}
+
+.emp-role {
+  font-size: 14px;
+  color: #777;
+}
+
+.emp-prev-btn, .emp-next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  margin-top: 20px;
+}
+
+.emp-prev-btn { left: -50px; }
+.emp-next-btn { right: -50px; }
+
+.emp-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.emp-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin: 0 6px;
+  background: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.emp-dot.active {
+  background: #FFC107;
+}
+
+.employee-review-section::before {
+  content: "";
+  position: relative;
+  bottom: -10px;
+  right: 700px;
+  width: 1000px;
+  height: 450px;
+  background: #efebfe;
+  border-radius: 10%;
+  z-index: 0;
+}
+
+/* Footer */
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 20px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-column {
+  flex: 1 1 150px;
+  margin: 15px;
+}
+
+.footer-column h4 {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #ccc;
+}
+
+.store-badge {
+  width: 140px;
+  margin-bottom: 30px;
+  display: block;
+  cursor: pointer;
+}
+
+.social-icons i {
+  font-size: 20px;
+  margin-right: 15px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  color: white;
+}
+
+.social-icons i:hover {
+  color: #ccc;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  border-top: 1px solid #222;
+  padding-top: 15px;
+}
+
+/* ==================== GENERAL RESPONSIVE RULES ==================== */
+@media (max-width: 1200px) {
+  .navbar {
+    padding: 15px 30px;
+  }
+  
+  .logo img {
+    margin-left: 60px;
+  }
+  
+  .download-btn a {
+    margin-right: 60px;
+  }
+  
+  .team-section {
+    padding: 60px 5%;
+    padding-top: 180px;
+  }
+}
+
+/* ==================== TABLET VIEW (768px - 992px) ==================== */
+@media (max-width: 992px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+  
+  .logo img {
+    margin-left: 0;
+  }
+  
+  .download-btn a {
+    margin-right: 0;
+    padding: 10px 20px;
+  }
+  
+  .nav-links {
+    gap: 15px;
+  }
+  /* Team Section */
+  .team-section {
+    flex-direction: column;
+    padding-top: 160px;
+  }
+  
+  .team-text {
+    max-width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .team-text h2,
+  .team-text p,
+  .view-jobs-btn {
+    margin-left: 0;
+  }
+  
+  .team-images {
+    margin-right: 0;
+    padding: 30px;
+  }
+  
+  /* Features */
+  .features {
+    gap: 40px;
+  }
+  
+  /* Carousel */
+  .rapido-carousel-item {
+    flex: 0 0 50%;
+  }
+  
+  /* Employee Review */
+  .emp-card {
+    height: auto;
+    padding-bottom: 40px;
+  }
+}
+
+/* ==================== MOBILE VIEW (576px - 768px) ==================== */
+@media (max-width: 768px) {
+.navbar {
+    flex-direction: column;
+    padding: 15px;
+    position: fixed;
+    height: 142px;
+  }
+  
+  .logo img {
+    margin: 0 auto 15px;
+    height: 45px;
+    width: 150px;
+  }
+  
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 15px;
+    gap: 10px;
+  }
+  
+  
+  .nav-links a {
+    font-size: 14px;
+  }
+  
+  .download-btn a {
+    margin-right: 0;
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  
+  /* Team Section */
+  .team-section {
+    padding-top: 280px;
+  }
+  
+  .team-text h2 {
+    font-size: 2.2rem;
+  }
+  
+  .team-images {
+    flex-direction: row;
+    border-radius: 80px;
+    padding: 20px;
+  }
+  
+  .team-images .image-left img {
+    margin-bottom: 80px;
+  }
+  
+  .team-images .image-right img {
+    margin-top: 100;
+    margin-left: -8px;
+  }
+  
+  /* Features */
+  .features {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .feature-item {
+    max-width: 100%;
+  }
+  
+  /* Carousels */
+  .rapido-carousel-item,
+  .emp-card {
+    flex: 0 0 100%;
+  }
+  
+  .rapido-carousel-container,
+  .employee-review-carousel {
+    padding: 0 20px;
+  }
+  
+  .rapido-carousel-btn,
+  .emp-prev-btn,
+  .emp-next-btn {
+    display: none; /* Hide arrows on mobile */
+  }
+  
+  .emp-card {
+    margin-top: 60px; /* Reduced margin for mobile */
+    height: auto; /* Auto height for content */
+    padding: 20px 15px 40px; /* More padding at bottom */
+    min-height: 280px; /* Minimum height to prevent squishing */
+    gap: 30px;
+  }
+
+  .emp-avatar {
+    width: 70px;
+    height: 70px;
+    top: -35px; /* Better positioning */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    margin-top: 50px; /* Remove extra margin */
+    border-radius: 20px !important; /* Ensure consistent shape */
+    border: 3px solid #fff; /* White border for visibility */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Depth effect */
+  }
+
+  .emp-text {
+    margin-top: 50px; /* Adjusted spacing */
+    padding-top: 15px; /* Extra space above text */
+    font-size: 15px; /* Slightly larger text */
+    line-height: 1.5; /* Better readability */
+  }
+
+  .emp-role {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 13px;
+  }
+
+
+@media (max-width: 576px) {
+  .emp-card {
+    min-height: 250px; /* Slightly smaller cards */
+    margin: 40px 10px 20px; /* Better margins */
+  }
+
+  .emp-avatar {
+    width: 60px;
+    height: 60px;
+    top: -30px;
+  }
+
+  .emp-text {
+    margin-top: 40px;
+    font-size: 14px;
+  }
+}
+
+/* ==================== SMALL MOBILE VIEW (<576px) ==================== */
+@media (max-width: 576px) {
+  /* Navbar */
+  .navbar {
+    padding: 10px 15px;
+  }
+  
+  .logo img {
+    height: 35px;
+  }
+  
+  .nav-links {
+    gap: 10px;
+  }
+  
+  /* Team Section */
+  .team-text h2 {
+    font-size: 1.8rem;
+  }
+  
+  .team-text p {
+    font-size: 1.1rem;
+  }
+  
+  .view-jobs-btn {
+    padding: 10px 20px;
+  }
+  
+  .team-images .image-left img,
+  .team-images .image-right img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Footer */
+  .footer-column {
+    flex: 1 1 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .social-icons {
+    justify-content: center;
+  }
+  
+  .store-badge {
+    margin: 0 auto 20px;
+  }
+}
+
+/* ==================== CAROUSEL SPECIFIC STYLES ==================== */
+@media (max-width: 992px) {
+  .rapido-carousel-item {
+    flex: 0 0 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .rapido-carousel-item {
+    flex: 0 0 100%;
+  }
+  
+  .rapido-carousel-item img {
+    height: 250px;
+  }
+}
+
+/* ==================== EMPLOYEE REVIEW SPECIFIC STYLES ==================== */
+@media (max-width: 768px) {
+  .emp-card {
+    margin: 20px 10px;
+    padding: 15px;
+  }
+  
+  .emp-text {
+    margin-top: 60px;
+  }
+}}

@@ -1,0 +1,424 @@
+/* ---------- Base Reset ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 50px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  height: 51px;
+  margin-left: 127px;
+  margin-top: 2px;
+  width: 170px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 5px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #222;
+}
+
+.nav-links a.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1.5px;
+  width: 100%;
+  background-color: black;
+  border-radius: 4px;
+}
+
+/* ---------- Download App Button ---------- */
+.download-btn a {
+  background-color: black;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  margin-right: 140px;
+}
+
+.download-btn a:hover {
+  background-color: #333;
+}
+
+/* ---------- Find Us Section ---------- */
+.find-us-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  overflow: hidden;
+  padding: 200px 200px 100px;
+}
+
+.find-us-content {
+  max-width: 600px;
+}
+
+.find-us-content h2 {
+  font-size: 3.35rem;
+  font-weight: 650;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.find-us-content p {
+  font-size: 21.5px;
+  color: #464545;
+  font-weight: 300;
+  padding-top: 20px;
+}
+
+.find-us-dots {
+  width: 160px;
+  height: 160px;
+  background-image: url('images/yellow-dots.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 50px;
+}
+
+/* ---------- Contact Section ---------- */
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  background-color: #fff;
+  padding: 0px 60px;
+}
+
+.contact-left {
+  flex: 1;
+}
+
+.contact-right {
+  width: 342px; 
+  margin-right: 100px;
+}
+
+.dots-bg {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  width: 150px;
+  height: 150px;
+  background-image: url('images/yellow-dots.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: -100px;
+}
+
+.form-group {
+  width: 684px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group label {
+  font-size: 16px;
+  font-weight: 400;
+  color: #3b3b3b;
+  padding-left: 130px;
+}
+
+.form-group label span {
+  color: #fbbd23;
+}
+
+.form-group input,
+.form-group select {
+  height: 45px;
+  padding: 0 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+  width: 100%;
+  margin-left: 130px;
+}
+
+.form-group textarea {
+  height: 200px;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  resize: none;
+  outline: none;
+  width: 100%;
+  margin-left: 130px;
+}
+
+.submit-btn {
+  width: 684px;
+  height: 55px;
+  background: #facc37;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+  margin-left: 130px;
+  margin-bottom: 50px;
+}
+
+.submit-btn:hover {
+  background: #e6b830;
+}
+
+/* ---------- Address ---------- */
+.address-box {
+  margin-bottom: 30px;
+}
+
+.address-box h4 {
+  font-size: 17px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+.address-box p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  padding-bottom: 30px;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 20px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-column {
+  flex: 1 1 150px;
+  margin: 15px;
+}
+
+.footer-column h4 {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #ccc;
+}
+
+.store-badge {
+  width: 140px;
+  margin-bottom: 30px;
+  display: block;
+  cursor: pointer;
+}
+
+.social-icons i {
+  font-size: 20px;
+  margin-right: 15px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  color: white;
+}
+
+.social-icons i:hover {
+  color: #ccc;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  border-top: 1px solid #222;
+  padding-top: 15px;
+}
+
+/* ---------- RESPONSIVENESS ---------- */
+
+/* Tablets */
+@media screen and (max-width: 1024px) {
+  .navbar {
+    padding: 10px 20px;
+    justify-content: center;
+    gap: 15px;
+  }
+  .logo img {
+    margin-left: 0;
+    width: 140px;
+  }
+  .download-btn a {
+    margin-right: 0;
+    padding: 10px 20px;
+  }
+  .find-us-section {
+    padding: 150px 50px 80px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .find-us-content {
+    max-width: 90%;
+  }
+  .contact-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .form-group,
+  .submit-btn {
+    width: 100%;
+    margin-left: 0;
+  }
+  .form-group label {
+    padding-left: 0;
+  }
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    margin-left: 0;
+    width: 95vw;
+  }
+  .contact-right {
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .nav-links {
+    flex-direction: row;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .nav-links a {
+    white-space: nowrap;    /* Prevent text breaking */
+    font-size: 0.95rem;     /* Slightly smaller text */
+    margin-bottom: 8px;
+  }
+
+  .download-btn {
+    order: 3;
+    margin-bottom: 5px;
+  }
+  .find-us-section {
+    padding: 220px 20px 60px;
+  }
+  .find-us-content h2 {
+    font-size: 2rem;
+  }
+  .find-us-content p {
+    font-size: 1rem;
+  }
+  .find-us-dots {
+    display: none;
+  }
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  .social-icons {
+    margin-top: 20px;
+  }
+}
+
+
+/* Small Mobile */
+@media screen and (max-width: 480px) {
+  .logo img {
+    width: 120px;
+  }
+  .nav-links {
+    gap: 8px;
+  }
+  .find-us-content h2 {
+    font-size: 1.8rem;
+  }
+  .find-us-content p {
+    font-size: 0.95rem;
+  }
+  .submit-btn {
+    font-size: 14px;
+    height: 45px;
+  }
+}

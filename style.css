@@ -51,6 +51,7 @@ body {
   background: url("https://maps.googleapis.com/maps/api/staticmap?center=India&zoom=12&size=800x600&maptype=roadmap&key=YOUR_API_KEY") no-repeat center center/cover;
   padding: 80px 20px;
   text-align: center;
+  padding-top: 150px;
 }
 
 .bg-image {
